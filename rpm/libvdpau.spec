@@ -1,4 +1,4 @@
-﻿Name:		libvdpau
+Name:		libvdpau
 Version:        1.1.1
 Release:        1
 Summary:        Generate Your Projects

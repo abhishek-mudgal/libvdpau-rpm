@@ -1,16 +1,15 @@
 ﻿Name:		libvdpau
-Version:		1.1.1
-Release:		1
-Summary:	Generate Your Projects
-
-Group:		Development/Libraries
-License:	Custom
-URL: 		
-Source0:	https://people.freedesktop.org/~aplattner/vdpau/%{name}-%{version}.tar.gz
+Version:        1.1.1
+Release:        1
+Summary:        Generate Your Projects
+Group:          Development/Libraries
+License:        Custom
+URL:            https://www.freedesktop.org/wiki/Software/VDPAU
+Source0:        https://people.freedesktop.org/~aplattner/vdpau/%{name}-%{version}.tar.gz
 BuildRequires:  automake
 BuildRequires:  libtool
 BuildRequires:  gettext
-Requires:	libxext
+Requires:       libxext
 
 
 %description
@@ -22,7 +21,7 @@ VDPAU is the Video Decode and Presentation API for UNIX. It provides an interfac
 %build
 ./autogen.sh
 %configure \
-	 --enable-static
+                --enable-static
 make %{?_smp_mflags}
 
 %install
@@ -31,4 +30,5 @@ make %{?_smp_mflags}
 
 %files
 %defattr(-,root,root,-)
+%{_libdir}/libvdpau/*.so
 %{_libdir}/libvdpau/*.so.*

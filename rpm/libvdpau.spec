@@ -5,7 +5,7 @@ Summary:        Generate Your Projects
 Group:          Development/Libraries
 License:        Custom
 URL:            https://www.freedesktop.org/wiki/Software/VDPAU
-Source0:        https://people.freedesktop.org/~aplattner/vdpau/%{name}-%{version}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  automake
 BuildRequires:  libtool
 BuildRequires:  gettext
